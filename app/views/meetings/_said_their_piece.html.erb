@@ -1,0 +1,6 @@
+<h3>Said their piece</h3>
+<ul>
+<% @meeting.said_their_piece.each do |member| %>
+  <li><%= member.name %></li>
+<% end %>
+</ul>

@@ -1,0 +1,12 @@
+common: &COMMON
+  adapter: postgresql
+  username: postgres
+
+development:
+  <<: *COMMON
+  database: standup_development
+
+test:
+  <<: *COMMON
+  database: standup_test
+
